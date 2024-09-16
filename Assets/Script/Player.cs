@@ -7,23 +7,47 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     Rigidbody2D rb;
+
     public Vector3 moveinput;
+
     public float movespeed = 3f;
+
     public float jump = 5f;
+
+    public float rollboost = 4f;
+
+    public float RollTime = 0.25f;
+
+    bool checkroll = false;
+
+    private float checkTime;
+
     public float attackRange;
+
     public Transform attackPoint;
+
     public int damage;
+
     bool isGrounded = false;
+
     Animator animator;
+
     Health health;
+
     Animator enemyAnim;
+
    
+
     public float timeBtwAttack;
+
     private float timebtwattack;
+    //private bool isAttacking = false;
+    private int clickcount = 0;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator= GetComponent<Animator>();
+        
     }
 
     void Update()
@@ -45,17 +69,57 @@ public class Player : MonoBehaviour
         if (moveinput.x != 0)
         {
             if (moveinput.x > 0)
-                transform.localScale = new Vector3(1.7f, 1.7f, 0);
+                transform.localScale = new Vector3(1f, 1f, 0);
             else
-                transform.localScale = new Vector3(-1.7f, 1.7f, 0);
+                transform.localScale = new Vector3(-1f, 1f, 0);
         }
 
-        if (Input.GetMouseButtonDown(0) && timebtwattack <=0)
+        if (Input.GetMouseButtonDown(0) && timebtwattack <=0 )
         {
-            Attack();
+            if (isGrounded) 
+            {
+                clickcount++;
+                if (clickcount % 2 != 0)
+                {
+                    Attack();
+
+                }
+                else
+                {
+                    Attack2();
+
+                }
+            }
+            else
+            {
+                AirAttack();
+            }
+
         }
-        
-        
+
+        if (Input.GetKeyDown(KeyCode.LeftShift) && checkTime <= 0)
+        {
+            animator.SetBool("roll", true);
+            movespeed += rollboost;
+            checkTime = RollTime;
+            checkroll = true;
+            
+        }
+
+        if (checkTime <= 0 && checkroll == true)
+        {
+            animator.SetBool("roll", false);
+            movespeed -= rollboost;
+            checkroll = false;
+            
+        }
+        else
+        {
+            checkTime -= Time.deltaTime;
+        }
+
+
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -82,6 +146,42 @@ public class Player : MonoBehaviour
         foreach (Collider2D enemy in hitEnemies) 
         {
             if (enemy.CompareTag("Enemy")) 
+            {
+                health = enemy.GetComponent<Health>();
+                enemyAnim = enemy.GetComponent<Animator>();
+                DamageEnemy();
+            }
+        }
+    }
+
+    void Attack2()
+    {
+        timebtwattack = timeBtwAttack;
+        animator.SetTrigger("Attack2");
+
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange);
+
+        foreach (Collider2D enemy in hitEnemies)
+        {
+            if (enemy.CompareTag("Enemy"))
+            {
+                health = enemy.GetComponent<Health>();
+                enemyAnim = enemy.GetComponent<Animator>();
+                DamageEnemy();
+            }
+        }
+    }
+
+    void AirAttack()
+    {
+        timebtwattack = timeBtwAttack;
+        animator.SetTrigger("AirAttack");
+
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange);
+
+        foreach (Collider2D enemy in hitEnemies)
+        {
+            if (enemy.CompareTag("Enemy"))
             {
                 health = enemy.GetComponent<Health>();
                 enemyAnim = enemy.GetComponent<Animator>();

@@ -17,6 +17,7 @@ public class EnemyFly : MonoBehaviour
     private Vector3 startPos;
     private bool movetostart;
     Health health;
+   
     Animator animator;
     public int damage = 5;
 
@@ -103,7 +104,7 @@ public class EnemyFly : MonoBehaviour
         {
             health = collision.GetComponent<Health>();
             animator.SetBool("attack", true);
-            InvokeRepeating("DamagePlayer", 0f, 3f);
+            InvokeRepeating("DamagePlayer", 0f, 2f);
         }
     }
 
