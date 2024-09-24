@@ -12,7 +12,7 @@ public class EnemyWalk : MonoBehaviour
     public GameObject pointB;
     private Transform curPoint;
     private int moveDirection = 1;
-   
+    Animator playerAnim;
 
     void Start()
     {
@@ -47,7 +47,7 @@ public class EnemyWalk : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             health = collision.GetComponent<Health>();
-            
+            playerAnim = collision.GetComponent <Animator>();
             InvokeRepeating("DamagePlayer", 0f, 5f);
         }
     }
@@ -64,8 +64,12 @@ public class EnemyWalk : MonoBehaviour
 
     void DamagePlayer()
     {
-        if (health != null)
+        if (health != null) 
+        {
             health.TakeDamage(damage);
+            playerAnim.SetTrigger("TakeHit");
+        }
+            
     }
 
 

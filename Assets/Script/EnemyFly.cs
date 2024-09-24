@@ -19,6 +19,7 @@ public class EnemyFly : MonoBehaviour
     Health health;
    
     Animator animator;
+    Animator playerAnim;
     public int damage = 5;
 
     void Start()
@@ -104,6 +105,7 @@ public class EnemyFly : MonoBehaviour
         {
             health = collision.GetComponent<Health>();
             animator.SetBool("attack", true);
+            playerAnim = collision.GetComponent<Animator>();
             InvokeRepeating("DamagePlayer", 0f, 2f);
         }
     }
@@ -120,7 +122,11 @@ public class EnemyFly : MonoBehaviour
 
     void DamagePlayer()
     {
-        if (health != null)
+        if (health != null) 
+        {
             health.TakeDamage(damage);
+            playerAnim.SetTrigger("TakeHit");
+        }
+            
     }
 }
