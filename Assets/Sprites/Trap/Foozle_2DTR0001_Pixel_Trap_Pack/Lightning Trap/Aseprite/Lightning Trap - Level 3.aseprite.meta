@@ -1,0 +1,753 @@
+fileFormatVersion: 2
+guid: e599a6c41cd434c4f8726c40c01faabf
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMasterTextureLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Lightning Trap - Level 3_Frame_0
+    originalName: 
+    pivot: {x: 0.42857143, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 56
+      height: 96
+    spriteID: 1263200241fc77642bd7ca0e3375f11c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Lightning Trap - Level 3_Frame_1
+    originalName: 
+    pivot: {x: 0.42857143, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 108
+      width: 56
+      height: 96
+    spriteID: 0089c20ef14b0cd42bf42ff59b0c3caf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 108}
+  - name: Lightning Trap - Level 3_Frame_2
+    originalName: 
+    pivot: {x: 0.42857143, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 212
+      width: 56
+      height: 96
+    spriteID: 45bb17e6620eb694189473f8fc73b772
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 212}
+  - name: Lightning Trap - Level 3_Frame_3
+    originalName: 
+    pivot: {x: 0.42857143, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 316
+      width: 56
+      height: 96
+    spriteID: b0ca3c3b185a50848b9c7e517f5a49a1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 316}
+  - name: Lightning Trap - Level 3_Frame_4
+    originalName: 
+    pivot: {x: 0.42857143, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 4
+      width: 56
+      height: 96
+    spriteID: 7cab51fa4a4bd14449a3c32f5dfb65ea
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 4}
+  - name: Lightning Trap - Level 3_Frame_5
+    originalName: 
+    pivot: {x: 0.42857143, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 108
+      width: 56
+      height: 96
+    spriteID: d0a90a8c39353334bbf234b66df89210
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 108}
+  - name: Lightning Trap - Level 3_Frame_6
+    originalName: 
+    pivot: {x: 0.42857143, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 212
+      width: 56
+      height: 96
+    spriteID: 673cb7cb22220bb4791329d3155fba5f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 212}
+  - name: Lightning Trap - Level 3_Frame_7
+    originalName: 
+    pivot: {x: 0.42857143, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 316
+      width: 56
+      height: 96
+    spriteID: ec90de2c7604b914e8f289af8b07faf9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 316}
+  - name: Lightning Trap - Level 3_Frame_8
+    originalName: 
+    pivot: {x: 0.42857143, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 132
+      y: 4
+      width: 56
+      height: 96
+    spriteID: 7fa82dc575b4edf458e3c6c018388994
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 132, y: 4}
+  - name: Lightning Trap - Level 3_Frame_9
+    originalName: 
+    pivot: {x: 0.42857143, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 132
+      y: 108
+      width: 56
+      height: 96
+    spriteID: 333102a4ea1b26541a225b024feee042
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 132, y: 108}
+  - name: Lightning Trap - Level 3_Frame_10
+    originalName: 
+    pivot: {x: 0.42857143, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 132
+      y: 212
+      width: 56
+      height: 96
+    spriteID: 7f5438e8477f6a04ebc8ddad8e1da461
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 132, y: 212}
+  - name: Lightning Trap - Level 3_Frame_11
+    originalName: 
+    pivot: {x: 0.42857143, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 132
+      y: 316
+      width: 56
+      height: 96
+    spriteID: 7ea692f6d2d6d4c4e85a10fa4fda607c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 132, y: 316}
+  - name: Lightning Trap - Level 3_Frame_12
+    originalName: 
+    pivot: {x: 0.42857143, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 196
+      y: 4
+      width: 56
+      height: 96
+    spriteID: cf01e08347ead4e488a6378710db7ce0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 196, y: 4}
+  - name: Lightning Trap - Level 3_Frame_13
+    originalName: 
+    pivot: {x: 0.42857143, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 196
+      y: 108
+      width: 56
+      height: 96
+    spriteID: f861c7e7c7a15244484ba67fb2af3615
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 196, y: 108}
+  - name: Lightning Trap - Level 3_Frame_14
+    originalName: 
+    pivot: {x: 0.42857143, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 196
+      y: 212
+      width: 56
+      height: 96
+    spriteID: fb9b3d1ca38038947915d5be55527d01
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 196, y: 212}
+  - name: Lightning Trap - Level 3_Frame_15
+    originalName: 
+    pivot: {x: 0.42857143, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 196
+      y: 316
+      width: 56
+      height: 96
+    spriteID: 4e05a7c90780cc745ab8a7931c2542b6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 196, y: 316}
+  - name: Lightning Trap - Level 3_Frame_16
+    originalName: 
+    pivot: {x: 0.42857143, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 260
+      y: 4
+      width: 56
+      height: 96
+    spriteID: d8fccd5f69f92d441a6d4b32caf66fa2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 260, y: 4}
+  - name: Lightning Trap - Level 3_Frame_17
+    originalName: 
+    pivot: {x: 0.42857143, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 260
+      y: 108
+      width: 56
+      height: 96
+    spriteID: 1508fb40484f2604e8a78df289a4cf42
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 260, y: 108}
+  - name: Lightning Trap - Level 3_Frame_18
+    originalName: 
+    pivot: {x: 0.42857143, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 260
+      y: 212
+      width: 56
+      height: 96
+    spriteID: 778a5c03d7dc4d34b801024ec34f94de
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 260, y: 212}
+  - name: Lightning Trap - Level 3_Frame_19
+    originalName: 
+    pivot: {x: 0.42857143, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 260
+      y: 316
+      width: 56
+      height: 96
+    spriteID: 652c6b22a72c32d4da8491787e9fbf10
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 260, y: 316}
+  - name: Lightning Trap - Level 3_Frame_20
+    originalName: 
+    pivot: {x: 0.42857143, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 324
+      y: 4
+      width: 56
+      height: 96
+    spriteID: 3ed2c3a89d0025e46be4b1c92e80162e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 324, y: 4}
+  - name: Lightning Trap - Level 3_Frame_21
+    originalName: 
+    pivot: {x: 0.42857143, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 324
+      y: 108
+      width: 56
+      height: 96
+    spriteID: 2b0f29c1b1387314aa1999387add55f1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 324, y: 108}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 123099131
+    name: Lightning Trap - Level 3
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Lightning Trap - Level 3_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 24
+        y: 0
+        width: 56
+        height: 96
+      spriteId: 1263200241fc77642bd7ca0e3375f11c
+    - name: Lightning Trap - Level 3_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 24
+        y: 0
+        width: 56
+        height: 96
+      spriteId: 0089c20ef14b0cd42bf42ff59b0c3caf
+    - name: Lightning Trap - Level 3_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 24
+        y: 0
+        width: 56
+        height: 96
+      spriteId: 45bb17e6620eb694189473f8fc73b772
+    - name: Lightning Trap - Level 3_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 24
+        y: 0
+        width: 56
+        height: 96
+      spriteId: b0ca3c3b185a50848b9c7e517f5a49a1
+    - name: Lightning Trap - Level 3_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 24
+        y: 0
+        width: 56
+        height: 96
+      spriteId: 7cab51fa4a4bd14449a3c32f5dfb65ea
+    - name: Lightning Trap - Level 3_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 24
+        y: 0
+        width: 56
+        height: 96
+      spriteId: d0a90a8c39353334bbf234b66df89210
+    - name: Lightning Trap - Level 3_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 24
+        y: 0
+        width: 56
+        height: 96
+      spriteId: 673cb7cb22220bb4791329d3155fba5f
+    - name: Lightning Trap - Level 3_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 24
+        y: 0
+        width: 56
+        height: 96
+      spriteId: ec90de2c7604b914e8f289af8b07faf9
+    - name: Lightning Trap - Level 3_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 24
+        y: 0
+        width: 56
+        height: 96
+      spriteId: 7fa82dc575b4edf458e3c6c018388994
+    - name: Lightning Trap - Level 3_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 24
+        y: 0
+        width: 56
+        height: 96
+      spriteId: 333102a4ea1b26541a225b024feee042
+    - name: Lightning Trap - Level 3_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 24
+        y: 0
+        width: 56
+        height: 96
+      spriteId: 7f5438e8477f6a04ebc8ddad8e1da461
+    - name: Lightning Trap - Level 3_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 24
+        y: 0
+        width: 56
+        height: 96
+      spriteId: 7ea692f6d2d6d4c4e85a10fa4fda607c
+    - name: Lightning Trap - Level 3_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 24
+        y: 0
+        width: 56
+        height: 96
+      spriteId: cf01e08347ead4e488a6378710db7ce0
+    - name: Lightning Trap - Level 3_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 24
+        y: 0
+        width: 56
+        height: 96
+      spriteId: f861c7e7c7a15244484ba67fb2af3615
+    - name: Lightning Trap - Level 3_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 24
+        y: 0
+        width: 56
+        height: 96
+      spriteId: fb9b3d1ca38038947915d5be55527d01
+    - name: Lightning Trap - Level 3_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 24
+        y: 0
+        width: 56
+        height: 96
+      spriteId: 4e05a7c90780cc745ab8a7931c2542b6
+    - name: Lightning Trap - Level 3_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 24
+        y: 0
+        width: 56
+        height: 96
+      spriteId: d8fccd5f69f92d441a6d4b32caf66fa2
+    - name: Lightning Trap - Level 3_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 24
+        y: 0
+        width: 56
+        height: 96
+      spriteId: 1508fb40484f2604e8a78df289a4cf42
+    - name: Lightning Trap - Level 3_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 24
+        y: 0
+        width: 56
+        height: 96
+      spriteId: 778a5c03d7dc4d34b801024ec34f94de
+    - name: Lightning Trap - Level 3_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 24
+        y: 0
+        width: 56
+        height: 96
+      spriteId: 652c6b22a72c32d4da8491787e9fbf10
+    - name: Lightning Trap - Level 3_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 24
+        y: 0
+        width: 56
+        height: 96
+      spriteId: 3ed2c3a89d0025e46be4b1c92e80162e
+    - name: Lightning Trap - Level 3_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 24
+        y: 0
+        width: 56
+        height: 96
+      spriteId: 2b0f29c1b1387314aa1999387add55f1
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 96, y: 96}
