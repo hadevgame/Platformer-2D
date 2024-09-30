@@ -127,7 +127,7 @@ MonoBehaviour:
   nextWPDistance: 0.3
   maxMoveDistance: 5
   isChase: 0
-  damage: 5
+  damage: 3
 --- !u!58 &8436175347352402656
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -184,8 +184,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 930fef0bef4b5f942a0a8df903adff47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxhealth: 20
-  curhealth: 20
+  maxhealth: 6
+  curhealth: 6
   healthBar: {fileID: 0}
   goldPrefab: {fileID: 5200557749937965291, guid: 1ceba441522e81448ada9dbe939af5be, type: 3}
   heartPrefab: {fileID: 8950760322566425440, guid: 8b82c0dabc583c04699129b2fee051bd, type: 3}

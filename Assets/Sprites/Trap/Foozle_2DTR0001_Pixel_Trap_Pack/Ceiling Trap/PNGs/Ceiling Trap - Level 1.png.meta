@@ -42,12 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 30
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -103,7 +103,406 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Ceiling Trap - Level 1_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 51
+        width: 32
+        height: 13
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca70a7a51b392984990387a9c9453ff5
+      internalID: -1965253012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceiling Trap - Level 1_1
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 0
+        width: 44
+        height: 64
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceac23e72a2eede4b88658e915ffc3fa
+      internalID: 1166155320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceiling Trap - Level 1_2
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 32
+        height: 64
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19b0f89c7bc95d847937513b0cfa6411
+      internalID: 766561329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceiling Trap - Level 1_3
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 0
+        width: 32
+        height: 64
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71058b1633c40934ba5a2e5e74a2bbbd
+      internalID: -572066256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceiling Trap - Level 1_4
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 0
+        width: 32
+        height: 64
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 257c2f6248b27ab4983a5c12e1545b5e
+      internalID: -919343795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceiling Trap - Level 1_5
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 9
+        width: 33
+        height: 55
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5b0735ed0452f8488d13cfbe42066ea
+      internalID: -302817356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceiling Trap - Level 1_6
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 21
+        width: 32
+        height: 43
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18172ed07293cfc4bbf3e32600aa45e2
+      internalID: -333046459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceiling Trap - Level 1_7
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 29
+        width: 32
+        height: 35
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11345f5c537727342a1ca846a091b703
+      internalID: 670312936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceiling Trap - Level 1_8
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 36
+        width: 32
+        height: 28
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 120310b8a1cbbbd48bdf8b9e29e39c66
+      internalID: -232409275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceiling Trap - Level 1_9
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 43
+        width: 32
+        height: 21
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5b5c414e4e6c71498177d6ac2866415
+      internalID: -863636229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceiling Trap - Level 1_10
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 49
+        width: 32
+        height: 15
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03103038fde31894c8977a0ed605ec8a
+      internalID: 845691854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceiling Trap - Level 1_11
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 51
+        width: 32
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4136d9bb0cc7634e906c488d84ffe46
+      internalID: -50428292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceiling Trap - Level 1_12
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 52
+        width: 32
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d6b224addbb1c94fafa1ffc5976b6ab
+      internalID: 1619312310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceiling Trap - Level 1_13
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 51
+        width: 32
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89d9e2c127a01f84291fd523b53f16e3
+      internalID: -1794270261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceiling Trap - Level 1_14
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 0
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 999dd6f5d0f3dc642b3ebc3c69e2cdb0
+      internalID: -823359036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceiling Trap - Level 1_15
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 1
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f8a366387fd26d449e990e8f9138802
+      internalID: -1481157485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceiling Trap - Level 1_16
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 2
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c0bb4ac7df824643aa21b0548492a8c
+      internalID: 686346260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceiling Trap - Level 1_17
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 1
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab44d765a9a940441a213776ec215ef4
+      internalID: -905840869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ceiling Trap - Level 1_18
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 1
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e4e8196a601836448d0005fa4760b87
+      internalID: 783938992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +513,26 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Ceiling Trap - Level 1_0: -1965253012
+      Ceiling Trap - Level 1_1: 1166155320
+      Ceiling Trap - Level 1_10: 845691854
+      Ceiling Trap - Level 1_11: -50428292
+      Ceiling Trap - Level 1_12: 1619312310
+      Ceiling Trap - Level 1_13: -1794270261
+      Ceiling Trap - Level 1_14: -823359036
+      Ceiling Trap - Level 1_15: -1481157485
+      Ceiling Trap - Level 1_16: 686346260
+      Ceiling Trap - Level 1_17: -905840869
+      Ceiling Trap - Level 1_18: 783938992
+      Ceiling Trap - Level 1_2: 766561329
+      Ceiling Trap - Level 1_3: -572066256
+      Ceiling Trap - Level 1_4: -919343795
+      Ceiling Trap - Level 1_5: -302817356
+      Ceiling Trap - Level 1_6: -333046459
+      Ceiling Trap - Level 1_7: 670312936
+      Ceiling Trap - Level 1_8: -232409275
+      Ceiling Trap - Level 1_9: -863636229
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
