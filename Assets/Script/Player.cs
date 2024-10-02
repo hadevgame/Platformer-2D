@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
 
     public float jump = 5f;
 
-    public float rollboost = 4f;
+    public float rollboost ;
 
     public float RollTime = 0.25f;
 
@@ -36,7 +36,7 @@ public class Player : MonoBehaviour
 
     Animator enemyAnim;
 
-   
+    public GameOver gameover;
 
     public float timeBtwAttack;
 
@@ -133,6 +133,7 @@ public class Player : MonoBehaviour
         if (collision.CompareTag("water"))
         {
             Destroy(gameObject);
+            gameover.DisplayGameOver();
         }
     }
 
@@ -203,7 +204,6 @@ public class Player : MonoBehaviour
         {
             health.TakeDamageEnemy(damage);
             enemyAnim.SetTrigger("hit");
-        }
-            
+        }        
     }
 }

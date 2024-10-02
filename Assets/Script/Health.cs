@@ -7,9 +7,10 @@ public class Health : MonoBehaviour
     [SerializeField] int maxhealth;
     public int curhealth;
     Animator animator;
+    public GameOver gameover;
    
     public HealthBar healthBar;
-    private bool isDead = false;
+    private bool isDead = false ;
 
     public GameObject goldPrefab;
     public GameObject heartPrefab;
@@ -31,13 +32,13 @@ public class Health : MonoBehaviour
 
         curhealth -= damage;
 
-        if (curhealth <= 0)
+        if (curhealth <= 0 && !isDead)
         {
             curhealth = 0;
-            
+            isDead = true;
             animator.SetTrigger("dead");
-            // Destroy(gameObject);
-            isDead= true;
+            gameover.DisplayGameOver();
+            
         }
 
         if (healthBar != null)
@@ -86,12 +87,19 @@ public class Health : MonoBehaviour
         }
         
     }
+
+    public void UpdateMaxHealth() 
+    {
+        maxhealth += 5;
+        healthBar.UpdateBar(curhealth, maxhealth);
+    }
+
     public void DropGold()
     {
-        Vector3 goldPosition1 = transform.position ;
+        Vector3 goldPosition1 = transform.position;
         GameObject gold1 = Instantiate(goldPrefab, goldPosition1, Quaternion.identity);
         Rigidbody goldRb1 = gold1.GetComponent<Rigidbody>();
-        goldRb1.velocity = new Vector3(0, -goldSpeed, 0);
+        goldRb1.velocity = new Vector3(0, -1f, 0);
 
     }
 
@@ -99,7 +107,7 @@ public class Health : MonoBehaviour
     {
         Vector3 heartPosition = transform.position;
         GameObject heart = Instantiate(heartPrefab, heartPosition, Quaternion.identity);
-       
+
     }
 }
 
