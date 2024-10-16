@@ -130,7 +130,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 68
-        y: 423
+        y: 421
         width: 105
         height: 110
       alignment: 0
@@ -381,10 +381,10 @@ TextureImporter:
       name: Terrain_and_Props_13
       rect:
         serializedVersion: 2
-        x: 33
-        y: 192
-        width: 28
-        height: 48
+        x: 72
+        y: 434
+        width: 98
+        height: 21
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
