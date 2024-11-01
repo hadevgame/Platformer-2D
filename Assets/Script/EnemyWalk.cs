@@ -34,11 +34,13 @@ public class EnemyWalk : MonoBehaviour
         {
             curPoint= pointB.transform;
             transform.localScale = new Vector3(-2, 2, 0);
+            
         }
         if (Vector2.Distance(transform.position, curPoint.position) < 0.5f && curPoint == pointB.transform)
         {
             curPoint = pointA.transform;
             transform.localScale = new Vector3(2, 2, 0);
+            
         }
     }
 

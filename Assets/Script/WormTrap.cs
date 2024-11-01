@@ -65,7 +65,7 @@ public class WormTrap : MonoBehaviour
     {
         if (health != null)
         {
-            health.TakeDamageEnemy(damage);
+            health.TakeDamage(damage);
             playerAnim.SetTrigger("TakeHit");
         }
     }
