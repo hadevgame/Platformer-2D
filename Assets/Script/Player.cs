@@ -152,6 +152,12 @@ public class Player : MonoBehaviour
                 enemyAnim = enemy.GetComponent<Animator>();
                 DamageEnemy();
             }
+            if (enemy.CompareTag("Boss"))
+            {
+                health = enemy.GetComponent<Health>();
+                enemyAnim = enemy.GetComponent<Animator>();
+                DamageBoss();
+            }
         }
     }
 
@@ -169,6 +175,12 @@ public class Player : MonoBehaviour
                 health = enemy.GetComponent<Health>();
                 enemyAnim = enemy.GetComponent<Animator>();
                 DamageEnemy();
+            }
+            if (enemy.CompareTag("Boss"))
+            {
+                health = enemy.GetComponent<Health>();
+                enemyAnim = enemy.GetComponent<Animator>();
+                DamageBoss();
             }
         }
     }
@@ -188,6 +200,12 @@ public class Player : MonoBehaviour
                 enemyAnim = enemy.GetComponent<Animator>();
                 DamageEnemy();
             }
+            if (enemy.CompareTag("Boss"))
+            {
+                health = enemy.GetComponent<Health>();
+                enemyAnim = enemy.GetComponent<Animator>();
+                DamageBoss();
+            }
         }
     }
 
@@ -205,5 +223,13 @@ public class Player : MonoBehaviour
             health.TakeDamageEnemy(damage);
             enemyAnim.SetTrigger("hit");
         }        
+    }
+    void DamageBoss()
+    {
+        if (health != null)
+        {
+            health.TakeDamageBoss(damage);
+            enemyAnim.SetTrigger("hit");
+        }
     }
 }

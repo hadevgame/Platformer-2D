@@ -19,26 +19,27 @@ public class EnemyBoss : MonoBehaviour
     public GameObject imghealthbar;
     public float timeBtwAttack = 2f;
     private float timebtwattack;
-
+    private int healthboss;
+    private int countHealth = 0;
     
     void Start()
     {
-       
+        health= GetComponent<Health>();
         rb = GetComponent<Rigidbody2D>();
         bossAnim= GetComponent<Animator>();
         curPoint = pointA.transform;
         //bossAnim.SetTrigger("walk");
         startPos = transform.position;
         InvokeRepeating("CheckAttack", 0f, 3f);
-
+        
     }
 
     
     void Update()
     {
         DisplayName();
-       
-        /* Vector2 distance = curPoint.position - transform.position;
+        CheckHealth();
+         /*Vector2 distance = curPoint.position - transform.position;
          if (curPoint == pointA.transform) 
          {
              rb.velocity = new Vector2(-moveSpeed, 0);
@@ -65,18 +66,80 @@ public class EnemyBoss : MonoBehaviour
          }*/
     }
 
+    void CheckHealth() 
+    {
+        if (health != null)
+        {
+            healthboss = health.GetHealth();
+            if (healthboss <= 50 && countHealth == 0)
+            {
+                countHealth = 1;
+                
+                bossAnim.SetTrigger("flyup");
+                StartCoroutine(HealOverTime());
+               
+            }
+            if (healthboss == 0)
+                imghealthbar.SetActive(false);
+            else return;
+        }
+        else Debug.Log("health null");
+        
+    }
+
+    IEnumerator HealOverTime()
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            health.UpdateHealth(10);
+            yield return new WaitForSeconds(2f);
+        }
+        
+        bossAnim.SetTrigger("flydown");
+    }
+    void Move() 
+    {
+        bossAnim.SetTrigger("walk");
+        Vector2 distance = curPoint.position - transform.position;
+        if (curPoint == pointA.transform)
+        {
+            rb.velocity = new Vector2(-moveSpeed, 0);
+
+        }
+        else
+        {
+            rb.velocity = new Vector2(moveSpeed, 0);
+
+        }
+
+
+        if (Vector2.Distance(transform.position, curPoint.position) < 0.5f && curPoint == pointA.transform)
+        {
+            curPoint = pointB.transform;
+            transform.localScale = new Vector3(1, 1, 0);
+
+        }
+        if (Vector2.Distance(transform.position, curPoint.position) < 0.5f && curPoint == pointB.transform)
+        {
+            curPoint = pointA.transform;
+            transform.localScale = new Vector3(-1, 1, 0);
+
+        }
+    }
     void DisplayName() 
     {
         Vector3 playerPos = FindObjectOfType<Player>().transform.position;
         float distanceToTarget = Vector2.Distance(transform.position, playerPos);
         Vector3 rotate = playerPos - transform.position;
-        if (rotate.x < 0)
-            transform.localScale = new Vector3(-1f, 1f, 0);
-        else
-            transform.localScale = new Vector3(1f, 1f, 0);
+        
+        
         if (distanceToTarget < 3f) 
         {
             imghealthbar.SetActive(true);
+            if (rotate.x < 0)
+                transform.localScale = new Vector3(-1f, 1f, 0);
+            else
+                transform.localScale = new Vector3(1f, 1f, 0);
         }
         else
         {

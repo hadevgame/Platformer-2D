@@ -8,7 +8,7 @@ public class Health : MonoBehaviour
     public int curhealth;
     Animator animator;
     public GameOver gameover;
-   
+    Animator bossAnim;
     public HealthBar healthBar;
     private bool isDead = false ;
 
@@ -20,9 +20,14 @@ public class Health : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        
+        bossAnim = GetComponent<Animator>();
         curhealth = maxhealth;
        
+    }
+
+    public int GetHealth() 
+    {
+        return curhealth;
     }
 
     public void TakeDamage(int damage)
@@ -69,6 +74,34 @@ public class Health : MonoBehaviour
         {
             healthBar.UpdateBar(curhealth, maxhealth);
             
+        }
+    }
+
+    public void TakeDamageBoss(int damage)
+    {
+        curhealth -= damage;
+        float random = Random.value;
+        if (curhealth <= 0)
+        {
+            curhealth = 0;
+            
+            bossAnim.SetTrigger("death");
+            
+            //Destroy(gameObject);
+            if (random < 0.5f)
+            {
+                DropGold();
+            }
+            else
+            {
+                DropHeart();
+            }
+        }
+
+        if (healthBar != null)
+        {
+            healthBar.UpdateBar(curhealth, maxhealth);
+
         }
     }
 
