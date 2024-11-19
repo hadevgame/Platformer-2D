@@ -16,24 +16,32 @@ public class Golem : MonoBehaviour
     public bool isChase = false;
     private Vector3 startPos;
     private bool movetostart;
+
+    private bool isattack = false;
     Health health;
-    
-    
     Animator animator;
     Animator playerAnim;
     public int damage = 5;
-
+    float lastAttackTime = 0f;
     void Start()
     {
         startPos = transform.position;
         InvokeRepeating("CaculatePath", 0f, 0.2f);
         reachDes = true;
         animator = GetComponent<Animator>();
+        
     }
 
     void Update()
     {
-
+        if(isattack == false) 
+        {
+            CheckAttack();
+        }
+        if ( Time.time - lastAttackTime >= 5f)
+        {
+            SetIsAttack();
+        }
     }
 
     void CaculatePath()
@@ -51,6 +59,9 @@ public class Golem : MonoBehaviour
                 CancelInvoke("Calculatepath");
                 movetostart = true;
                 seeker.CancelCurrentPathRequest();
+                /*target = FindStartPos();
+                distanceToTarget = Vector2.Distance(transform.position, target);
+                if (seeker.IsDone())*/
                 seeker.StartPath(transform.position, startPos, OnPathComplete);
             }
         }
@@ -124,39 +135,58 @@ public class Golem : MonoBehaviour
             yield return null;
         }
         reachDes = true;
-        movetostart = false;
-        animator.SetBool("move", false);
-        if (movetostart == true) InvokeRepeating("CaculatePath", 0f, 0.2f);
+       
+        if (movetostart == true) 
+        {
+            movetostart = false;
+            animator.SetBool("move", false);
+            InvokeRepeating("CaculatePath", 0f, 0.2f);
+        }
+           
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    void CheckAttack()
     {
-        if (collision.CompareTag("Player"))
+        Vector3 playerPos = FindObjectOfType<Player>().transform.position;
+        float distanceToTarget = Vector2.Distance(transform.position, playerPos);
+
+        if (distanceToTarget < 1f)
         {
-            health = collision.GetComponent<Health>();
-            animator.SetBool("attack", true);
-            playerAnim = collision.GetComponent<Animator>();
-            InvokeRepeating("DamagePlayer", 0f, 2f);
+            //InvokeRepeating("Attack", 0f, 5f);
+            Attack();
+            isattack = true;
+            lastAttackTime = Time.time;
+        }
+        else
+        {
+            
+        }
+    }
+
+    void SetIsAttack() 
+    {
+        isattack = false;
+    }
+
+    /*private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player")) 
+        {
+            InvokeRepeating("CheckAttack", 0f, 5f);
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player")) 
         {
-            health = null;
-            animator.SetBool("attack", false);
-            CancelInvoke("DamagePlayer");
+            CancelInvoke("CheckAttack");
         }
-    }
-
-    void DamagePlayer()
+    }*/
+    void Attack() 
     {
-        if (health != null)
-        {
-            health.TakeDamage(damage);
-            playerAnim.SetTrigger("TakeHit");
-        }
-
+        animator.SetTrigger("attack");
+        //DamagePlayer();
     }
+
 }

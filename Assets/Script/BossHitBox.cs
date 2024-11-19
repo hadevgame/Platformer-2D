@@ -6,7 +6,7 @@ public class BossHitBox : MonoBehaviour
 {
     Health health;
     Animator playerAnim;
-    public int damage = 10;
+    public int damage ;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player")) 
