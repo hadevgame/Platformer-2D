@@ -125,7 +125,7 @@ MonoBehaviour:
   seeker: {fileID: 8436175347352402657}
   moveSpeed: 2
   nextWPDistance: 0.3
-  maxMoveDistance: 5
+  maxMoveDistance: 3
   isChase: 0
   damage: 3
 --- !u!58 &8436175347352402656
@@ -186,6 +186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxhealth: 6
   curhealth: 6
+  gameover: {fileID: 0}
   healthBar: {fileID: 0}
   goldPrefab: {fileID: 5200557749937965291, guid: 1ceba441522e81448ada9dbe939af5be, type: 3}
   heartPrefab: {fileID: 8950760322566425440, guid: 8b82c0dabc583c04699129b2fee051bd, type: 3}

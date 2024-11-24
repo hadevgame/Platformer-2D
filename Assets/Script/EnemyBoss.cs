@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using Unity.VisualScripting;
 using Pathfinding;
 
 public class EnemyBoss : MonoBehaviour
@@ -9,10 +9,6 @@ public class EnemyBoss : MonoBehaviour
     Rigidbody2D rb;
     Health health;
     public float moveSpeed;
-    public int damage = 4;
-    public GameObject pointA;
-    public GameObject pointB;
-    private Transform curPoint;
     Animator playerAnim;
     public Animator bossAnim;
     private Vector3 startPos;
@@ -27,8 +23,7 @@ public class EnemyBoss : MonoBehaviour
         health= GetComponent<Health>();
         rb = GetComponent<Rigidbody2D>();
         bossAnim= GetComponent<Animator>();
-        curPoint = pointA.transform;
-        //bossAnim.SetTrigger("walk");
+        
         startPos = transform.position;
         InvokeRepeating("CheckAttack", 0f, 3f);
         
@@ -39,31 +34,7 @@ public class EnemyBoss : MonoBehaviour
     {
         DisplayName();
         CheckHealth();
-         /*Vector2 distance = curPoint.position - transform.position;
-         if (curPoint == pointA.transform) 
-         {
-             rb.velocity = new Vector2(-moveSpeed, 0);
-
-         }
-         else 
-         {
-             rb.velocity = new Vector2(moveSpeed, 0);
-
-         }
-
-
-         if (Vector2.Distance(transform.position, curPoint.position) < 0.5f && curPoint == pointA.transform)
-         {
-             curPoint = pointB.transform;
-             transform.localScale = new Vector3(1, 1, 0);
-
-         }
-         if (Vector2.Distance(transform.position, curPoint.position) < 0.5f && curPoint == pointB.transform)
-         {
-             curPoint = pointA.transform;
-             transform.localScale = new Vector3(-1, 1, 0);
-
-         }*/
+         
     }
 
     void CheckHealth() 
@@ -96,35 +67,6 @@ public class EnemyBoss : MonoBehaviour
         }
         
         bossAnim.SetTrigger("flydown");
-    }
-    void Move() 
-    {
-        bossAnim.SetTrigger("walk");
-        Vector2 distance = curPoint.position - transform.position;
-        if (curPoint == pointA.transform)
-        {
-            rb.velocity = new Vector2(-moveSpeed, 0);
-
-        }
-        else
-        {
-            rb.velocity = new Vector2(moveSpeed, 0);
-
-        }
-
-
-        if (Vector2.Distance(transform.position, curPoint.position) < 0.5f && curPoint == pointA.transform)
-        {
-            curPoint = pointB.transform;
-            transform.localScale = new Vector3(1, 1, 0);
-
-        }
-        if (Vector2.Distance(transform.position, curPoint.position) < 0.5f && curPoint == pointB.transform)
-        {
-            curPoint = pointA.transform;
-            transform.localScale = new Vector3(-1, 1, 0);
-
-        }
     }
     void DisplayName() 
     {
@@ -175,5 +117,7 @@ public class EnemyBoss : MonoBehaviour
             bossAnim.SetTrigger("attack2");
         }
     }
+    
+
     
 }

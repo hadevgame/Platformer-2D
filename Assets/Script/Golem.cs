@@ -11,8 +11,8 @@ public class Golem : MonoBehaviour
     Coroutine moveCoroutine;
     bool reachDes = false;
     public float moveSpeed;
-    public float nextWPDistance = 2f;
-    public float maxMoveDistance = 5f;
+    public float nextWPDistance;
+    public float maxMoveDistance ;
     public bool isChase = false;
     private Vector3 startPos;
     private bool movetostart;
@@ -21,7 +21,7 @@ public class Golem : MonoBehaviour
     Health health;
     Animator animator;
     Animator playerAnim;
-    public int damage = 5;
+    
     float lastAttackTime = 0f;
     void Start()
     {
@@ -62,17 +62,19 @@ public class Golem : MonoBehaviour
                 /*target = FindStartPos();
                 distanceToTarget = Vector2.Distance(transform.position, target);
                 if (seeker.IsDone())*/
-                seeker.StartPath(transform.position, startPos, OnPathComplete);
+                
+                Vector2 start = FindStartPos();
+                seeker.StartPath(transform.position, start, OnPathComplete);
             }
         }
-        else 
+        /*else 
         {
             Vector2 target = FindStartPos();
             float distanceToTarget = Vector2.Distance(transform.position, target);
             if (distanceToTarget <= maxMoveDistance && seeker.IsDone())
                 seeker.StartPath(transform.position, target, OnPathComplete);
             
-        }
+        }*/
         
     }
 
@@ -99,15 +101,15 @@ public class Golem : MonoBehaviour
     }
     Vector2 FindStartPos()
     {
-        Vector3 playerPos = startPos;
-        Vector3 rotate = playerPos - transform.position;
-        if (rotate.x < 0 && rotate.y > 0 || rotate.x < 0 && rotate.y < 0)
+        Vector3 des = startPos;
+        Vector3 rotate = des - transform.position;
+        if (rotate.x < 0 )
             transform.localScale = new Vector3(-1f, 1f, 0);
         else
             transform.localScale = new Vector3(1f, 1f, 0);
 
 
-        return playerPos;
+        return des;
 
     }
 

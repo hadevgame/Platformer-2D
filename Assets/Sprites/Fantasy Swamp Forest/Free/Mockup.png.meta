@@ -109,11 +109,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2
-        y: 1
-        width: 205
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 0
+        width: 150
+        height: 42
+      alignment: 9
+      pivot: {x: 0.51430494, y: 0.5000003}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -146,6 +146,90 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Mockup_2
+      rect:
+        serializedVersion: 2
+        x: 1495
+        y: 1
+        width: 105
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e250b31948608c44ea9008252c23f8f9
+      internalID: 867394294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mockup_3
+      rect:
+        serializedVersion: 2
+        x: 1495
+        y: 2
+        width: 105
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3427813fb78ce846bf04aa49e507a13
+      internalID: 1734482321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mockup_4
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 226
+        width: 2
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bddade1595c089f4397b21d9e410dadf
+      internalID: -1415014857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mockup_5
+      rect:
+        serializedVersion: 2
+        x: 1361
+        y: 0
+        width: 128
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 732b637202f4df540a94fc31f203df5a
+      internalID: -242633044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -159,6 +243,10 @@ TextureImporter:
     nameFileIdTable:
       Mockup_0: -454023293
       Mockup_1: 260227769
+      Mockup_2: 867394294
+      Mockup_3: 1734482321
+      Mockup_4: -1415014857
+      Mockup_5: -242633044
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
