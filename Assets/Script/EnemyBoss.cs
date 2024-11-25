@@ -106,15 +106,16 @@ public class EnemyBoss : MonoBehaviour
 
     void Attack() 
     {
-        float random = Random.Range(0, 1);
-        if(random < 0.5f) 
+        float random = Random.Range(0, 10);
+        if(random < 5f) 
         {
-            bossAnim.SetTrigger("attack1");
+            bossAnim.SetTrigger("attack2");
 
         }
         else 
         {
-            bossAnim.SetTrigger("attack2");
+            
+            bossAnim.SetTrigger("attack1");
         }
     }
     
