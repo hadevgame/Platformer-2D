@@ -125,7 +125,7 @@ MonoBehaviour:
   seeker: {fileID: 8436175347352402657}
   moveSpeed: 2
   nextWPDistance: 0.3
-  maxMoveDistance: 3
+  maxMoveDistance: 4
   isChase: 0
   damage: 3
 --- !u!58 &8436175347352402656
