@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 92e48037376187a4e9dc112ab60d0abb
+guid: 4c54561e4d9362640a55f7c6001d82ea
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 50
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,85 +105,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tiles_0
+      name: cave_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 192
-        height: 96
+        y: 2
+        width: 86
+        height: 79
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10f2921caa8ae3442bc3031ca39b7594
-      internalID: -436882801
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a48b6a4e2f94a2947b205dfa2e11e5f3
-      internalID: 966957689
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_2
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d2276f3704f2c5e4dae6b0ac17a86715
-      internalID: 968174217
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tiles_3
-      rect:
-        serializedVersion: 2
-        x: 109
-        y: 1
-        width: 70
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 27bb1670feac98348b1d8679340fb0fd
-      internalID: 2041032646
+      spriteID: ba54aef36e561504fbc72bcee1a05c42
+      internalID: 667023260
       vertices: []
       indices: 
       edges: []
@@ -199,11 +136,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Tiles_0: -436882801
-      Tiles_1: 966957689
-      Tiles_2: 968174217
-      Tiles_3: 2041032646
-      Tiles_4: 1304391318
+      cave_0: 667023260
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

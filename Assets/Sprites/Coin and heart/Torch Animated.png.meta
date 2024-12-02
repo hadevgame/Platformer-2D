@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 92e48037376187a4e9dc112ab60d0abb
+guid: ffef637591dd3f14bb94079a728bd741
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 50
+  spritePixelsToUnits: 70
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tiles_0
+      name: Torch Animated_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 192
-        height: 96
+        x: 21
+        y: 73
+        width: 19
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10f2921caa8ae3442bc3031ca39b7594
-      internalID: -436882801
+      spriteID: f5795d5bbc6244c47a3598ba1c34b36a
+      internalID: -1427561518
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_1
+      name: Torch Animated_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 96
-        height: 96
+        x: 85
+        y: 73
+        width: 19
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,20 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a48b6a4e2f94a2947b205dfa2e11e5f3
-      internalID: 966957689
+      spriteID: 7949a0eb21c28aa43a029f460e9c4184
+      internalID: -1935518482
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_2
+      name: Torch Animated_2
       rect:
         serializedVersion: 2
-        x: 96
-        y: 0
-        width: 96
-        height: 96
+        x: 149
+        y: 73
+        width: 19
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,20 +161,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2276f3704f2c5e4dae6b0ac17a86715
-      internalID: 968174217
+      spriteID: 39ddbf7e34aa00e40bfbdf73ea96ee21
+      internalID: 285617706
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tiles_3
+      name: Torch Animated_3
       rect:
         serializedVersion: 2
-        x: 109
-        y: 1
-        width: 70
-        height: 31
+        x: 213
+        y: 73
+        width: 19
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,8 +182,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27bb1670feac98348b1d8679340fb0fd
-      internalID: 2041032646
+      spriteID: 7b4e25f81f5b2414a8ee4cbbe7e13bc9
+      internalID: -1722899098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torch Animated_4
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 9
+        width: 19
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9de1662b7dc22eb4cac188da1d8ab205
+      internalID: -1965936609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torch Animated_5
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 9
+        width: 19
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40e367b39afd14e4cbe5a9c35c123ae4
+      internalID: -626551740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torch Animated_6
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 9
+        width: 19
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d239414189c4724fb89ef46955bdacf
+      internalID: 1673029119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Torch Animated_7
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 9
+        width: 19
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29e94ac7ff22d6a419b6ee1ad48aed5b
+      internalID: -1558607667
       vertices: []
       indices: 
       edges: []
@@ -199,11 +283,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Tiles_0: -436882801
-      Tiles_1: 966957689
-      Tiles_2: 968174217
-      Tiles_3: 2041032646
-      Tiles_4: 1304391318
+      Torch Animated_0: -1427561518
+      Torch Animated_1: -1935518482
+      Torch Animated_2: 285617706
+      Torch Animated_3: -1722899098
+      Torch Animated_4: -1965936609
+      Torch Animated_5: -626551740
+      Torch Animated_6: 1673029119
+      Torch Animated_7: -1558607667
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
