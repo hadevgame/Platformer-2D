@@ -15,7 +15,7 @@ public class Arrow : MonoBehaviour
             playerHealth = playerAnim.GetComponent<Health>();
             DamagePlayer();
         }
-        if (collision.CompareTag("ground")) 
+        if (collision.CompareTag("ground") || collision.CompareTag("water")) 
         {
             Destroy(this.gameObject);
         }
